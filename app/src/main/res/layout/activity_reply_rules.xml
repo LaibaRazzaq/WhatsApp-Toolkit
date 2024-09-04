@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:tag="layout/activity_reply_rules_0">
+
+        <RelativeLayout
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/green">
+
+            <ImageView
+                android:id="@+id/imgTimeback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:text="Reply Rules"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/bg_color"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_border_design"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/ic_rules_for_reply" />
+
+                    <TextView
+                        style="@style/headerText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor = "@color/black"
+                        android:layout_marginStart="20dp"
+                        android:text="Reply Rules" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/chkContain"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/green"
+                    android:checked="true"
+                    android:gravity="left|center_vertical|center_horizontal|center"
+                    android:layoutDirection="rtl"
+                    android:padding="6dp"
+                    android:text="Contain the sentense" />
+
+                <CheckBox
+                    android:id="@+id/chkExact"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/green"
+                    android:gravity="left|center_vertical|center_horizontal|center"
+                    android:layoutDirection="rtl"
+                    android:padding="6dp"
+                    android:text="Exact phrase" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            >
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/bannerAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:adSize="BANNER"
+                app:adUnitId="@string/admob_banner_ad" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

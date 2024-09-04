@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg_color"
+        android:tag="layout/fragment_contacts_0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/green">
+
+            <ImageView
+                android:id="@+id/imgDirectBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                style="@style/appbar_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="Auto Replay To" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearRadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/round_border_design"
+            android:elevation="1dp"
+            android:orientation="vertical">
+
+
+
+            <RadioGroup
+                android:id="@+id/contactRdtGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbtnEverone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:buttonTint="@color/green"
+                    android:text="Everyone"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbtnContactList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My contact list..."
+                    android:buttonTint="@color/green"
+                   />
+
+                <RadioButton
+                    android:id="@+id/rbtnExceptContList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Except my contact list..."
+                    android:buttonTint="@color/green"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbtnExceptPhoneCont"
+                    android:layout_width="match_parent"
+                    android:buttonTint="@color/green"
+                    android:layout_height="wrap_content"
+                    android:text="Except my phone contacts"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:elevation="1dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:layout_margin="18dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Contact list"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgFullScreen"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_fullscreen"
+                    android:layout_margin="10dp"
+                    android:visibility="visible"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgChooseCont"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_add_circle"
+                    android:layout_marginRight="8dp"
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_border_design"
+                android:gravity="center"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgEmpty"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_group"
+                    />
+
+                <TextView
+                    android:id="@+id/txtEmpty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Auto reply to everyone."
+                    style="@style/listText"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/round_border_design"
+                android:layout_margin="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/contactRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/adviewContainner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:visibility="gone"
+
+             android:background="@drawable/ads_border"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="bottom"
+            >
+
+        </FrameLayout>
+    </LinearLayout>
+</layout>

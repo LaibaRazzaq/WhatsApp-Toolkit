@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".Myapplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:supportsRtl">
+<activity android:name=".activity.MainActivity2"/>
+        <activity android:name=".activity.PrivacyActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".activity.WhatsAppGifs"
+            android:exported="false"
+            android:parentActivityName=".activity.WhatsAppCleaner" />
+        <activity
+            android:name=".activity.WhatsappVoice"
+            android:exported="false"
+            android:parentActivityName=".activity.WhatsAppCleaner" />
+        <activity
+            android:name=".activity.WhatsAppAudio"
+            android:exported="false"
+            android:parentActivityName=".activity.WhatsAppCleaner" />
+        <activity
+            android:name=".activity.WhatsappWallpaper"
+            android:exported="false"
+            android:parentActivityName=".activity.WhatsAppCleaner" />
+        <activity
+            android:name=".activity.WhatsappDoc"
+            android:exported="false"
+            android:parentActivityName=".activity.WhatsAppCleaner" />
+        <activity
+            android:name=".activity.WhatsAppVideos"
+            android:exported="false"
+            android:parentActivityName=".activity.WhatsAppCleaner" />
+        <activity
+            android:name=".activity.FullImageViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WhatsAppImages"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WhatsAppCleaner"
+            android:exported="false"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.ReplySettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ReplyMessageList"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StatisticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddCustomReplyMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ReplyHeaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ReplyRulesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ReplyTimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GetContactActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".activity.ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AutoReplyActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.CustomReplyActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.DirectSendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VideoPlayerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.WhatsappActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.FullViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.splashActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity
+            android:name=".activity.GalleryActivity"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- <activity android:name="com.cd.statussaver.activity.MainActivity" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.SEND" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <data android:mimeType="image/*" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.SEND" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <data android:mimeType="text/plain" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.SEND_MULTIPLE" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <data android:mimeType="image/*" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".activity.WebviewAcitivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="com.cd.statussaver.util.NotificationService"
+            android:exported="true"
+            android:label="WhatsappAutoReply"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher_round" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/appid" />
+    </application>
+
+</manifest>

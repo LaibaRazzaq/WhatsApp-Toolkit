@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="Need Help?"
+        android:elevation="4dp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:id="@+id/needHelp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/green"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:src="@drawable/help_pannel"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="8dp"
+            app:cardElevation="4dp"
+
+
+
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="Permission required"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"/>
+                <TextView
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="This app requires Notification Access permissions to work."
+                android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="20dp"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Cancel"
+                        android:id="@+id/cancel"
+                        android:layout_marginHorizontal="16dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/app_rounded"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Ok"
+                        android:id="@+id/ok"
+                        android:layout_marginHorizontal="16dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/app_rounded"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

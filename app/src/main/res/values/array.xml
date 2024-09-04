@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="time">
+        <item>Seconds</item>
+        <item>Minutes</item>
+    </array>
+    <string-array name="SortBY">
+        <item>Large Size</item>
+        <item>Small Size</item>
+    </string-array>
+</resources>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/app_rounded"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/app_rounded"
+        android:orientation="horizontal"
+
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:text="User Guide"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/close"
+            app:tint="@color/white"
+            android:id="@+id/close"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:layout_height="18dp"/>
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="1st Step"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/app_rounded"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Open the whatsapp Status Saver App."
+                android:layout_marginTop="6dp"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/step_1"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="2nd Step"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/app_rounded"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Allow Notification Access."
+                android:layout_marginTop="6dp"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/step_2"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="•\t\t\tIf failed then close these setting and reach the main screen of your device where the Status Saver App listed,"
+                android:layout_marginTop="8dp"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:lineSpacingExtra="2dp"
+
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="•\t\t\tIf failed there would be a failure alert like shown below, then click and follow the step "
+                android:layout_marginTop="8dp"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/step_3"
+
+                android:layout_marginTop="8dp"
+
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="3rd Step"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/app_rounded"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="•\t\t\tIf failed then close these setting and reach the main screen of your device where the Status Saver App listed."
+                android:layout_marginTop="8dp"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:lineSpacingExtra="2dp"
+
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="•\t\tKeep long press for the app short menu"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="•\t\tClick on App Info"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/step3"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="4th Step"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/app_rounded"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="•\t\tClick on the Menu (3 Dots)."
+                android:layout_marginTop="8dp"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:lineSpacingExtra="2dp"
+
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="•\t\tClick on the Unlock restricted setting"
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="•\t\tReopen the and auto reply permission Step 1 and Step 2."
+                android:paddingVertical="3dp"
+                android:textSize="16sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="8dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/step4"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/step_4"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

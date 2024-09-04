@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".activity.WhatsAppAudio">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:elevation="4dp"
+        android:background="@color/green"
+        android:id="@+id/l"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_below="@id/l"
+        android:elevation="4dp"
+
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabBackground="@drawable/fragment_selected_tab"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+
+        app:tabIndicatorAnimationMode="fade"
+        android:background="@color/green"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/green"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabTextColor="@color/white" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPagerImages"
+        android:layout_below="@+id/tabs"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rectangle_white"
+        android:backgroundTint="#E8F1FF"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/tvAllowAccess"
+        android:text="@string/allow_whatsapp_access"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>

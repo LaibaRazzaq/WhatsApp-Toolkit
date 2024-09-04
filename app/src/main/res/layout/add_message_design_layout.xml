@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:aapt="http://schemas.android.com/aapt"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/linearUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_shap"
+        android:layout_marginBottom="15dp"
+        android:paddingRight="10dp"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtAutoReply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Incoming Message :"
+                android:paddingStart="20dp"
+                android:layout_marginBottom="3dp"
+                />
+            <TextView
+                android:id="@+id/txtIncomingMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:text="hello"
+                style="@style/headerText"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reply Message :"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:paddingStart="20dp"
+                />
+            <TextView
+                android:id="@+id/txtReplyMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="hello"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                style="@style/headerText"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imgEdit"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/pencil" />
+
+            <ImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:background="@drawable/ic_delete" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</layout>

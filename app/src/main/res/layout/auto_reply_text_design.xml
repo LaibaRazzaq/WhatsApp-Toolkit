@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/linearAutoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:paddingStart="20sp"
+        android:paddingTop="10sp"
+        android:paddingEnd="20sp">
+
+        <TextView
+            android:id="@+id/txtAutoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7sp"
+            android:text="Talk to you later."
+            style="@style/listText"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="#e0e0e0" />
+    </LinearLayout>
+</layout>

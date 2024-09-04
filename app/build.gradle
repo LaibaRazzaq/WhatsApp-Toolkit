@@ -1,0 +1,181 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdk 34
+    buildToolsVersion '34.0.0'
+    defaultConfig {
+        applicationId "com.zadeveloper.statusdownloader.whatsappstatussaver.savestatus"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode 8
+        versionName "0.8"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        setProperty("archivesBaseName", "Master toolkit" + "_vc_" + versionCode + "_vn_" + versionName + "_")
+    }
+    buildTypes {
+        release {
+            resValue "string", "appid", "ca-app-pub-4829739773020339~8111307540"
+
+            resValue "string", "admobe_banner_main", "ca-app-pub-4829739773020339/5521937689"
+            resValue "string", "admobe_banner_auto_reply", "ca-app-pub-4829739773020339/3202046044"
+            resValue "string", "admobe_banner_custom_reply", "ca-app-pub-4829739773020339/4719173660"
+            resValue "string", "admobe_banner_auto_reply_to", "ca-app-pub-4829739773020339/3406091992"
+            resValue "string", "admobe_banner_direct_reply", "ca-app-pub-4829739773020339/9269611007"
+
+            //NATIVE ADS
+
+            resValue "string", "admobe_back", "ca-app-pub-4829739773020339/5840683643"
+
+         //interstitial
+
+            resValue "string", "admobe_intertesial_add_custom_reply", "ca-app-pub-4829739773020339/3010474354"
+            resValue "string", "admobe_intertesial_auto_reply", "ca-app-pub-4829739773020339/4527601971"
+            resValue "string", "admobe_intertesial_contact", "ca-app-pub-4829739773020339/3214520306"
+            resValue "string", "admobe_intertesial_add_custom_reply_message", "ca-app-pub-4829739773020339/9384311016"
+            resValue "string", "admobe_intertesial_direct_send_message", "ca-app-pub-4829739773020339/8275275299"
+            resValue "string", "admobe_intertesial_gallery", "ca-app-pub-4829739773020339/6962193623"
+            resValue "string", "admobe_intertesial_setting", "ca-app-pub-4829739773020339/5445066009"
+            resValue "string", "admobe_intertesial_whatsweb", "ca-app-pub-4829739773020339/5649111959"
+
+            resValue "string", "admobe_intertesial_whatsAppActivity", "ca-app-pub-4829739773020339/2106803833"
+            resValue "string", "admobe_intertesial_whatsAppAudio", "ca-app-pub-4829739773020339/2711941519"
+            resValue "string", "admobe_intertesial_whatsAppCleaner", "ca-app-pub-4829739773020339/9192739322"
+
+            resValue "string", "admobe_intertesial_whatsAppDoc", "ca-app-pub-4829739773020339/3265625222"
+            resValue "string", "admobe_intertesial_whatsAppVoice", "ca-app-pub-4829739773020339/7879657650"
+            resValue "string", "admobe_intertesial_whatsAppGif", "ca-app-pub-4829739773020339/6566575983"
+            resValue "string", "admobe_intertesial_whatsAppImages", "ca-app-pub-4829739773020339/3010474354"
+
+            resValue "string", "admobe_intertesial_whatsAppWallaper", "ca-app-pub-4829739773020339/4527601971"
+            resValue "string", "admobe_intertesial_whatsAppVideo", "ca-app-pub-4829739773020339/3214520306"
+            resValue "string", "admobe_interestitial_splash", "ca-app-pub-4829739773020339/9384311016"
+
+
+            resValue "string", "admobe_app_open", "ca-app-pub-4829739773020339/4732967175"
+
+            resValue "string", "admobe_reward", "ca-app-pub-6151128815912996/6468389557"
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+        }
+        debug {
+            resValue "string", "appid", "ca-app-pub-3940256099942544~3347511713"
+
+            resValue "string", "admobe_banner_main", "ca-app-pub-3940256099942544/6300978111"
+            resValue "string", "admobe_banner_auto_reply", "ca-app-pub-3940256099942544/6300978111"
+            resValue "string", "admobe_banner_custom_reply", "ca-app-pub-3940256099942544/6300978111"
+            resValue "string", "admobe_banner_auto_reply_to", "ca-app-pub-3940256099942544/6300978111"
+            resValue "string", "admobe_banner_direct_reply", "ca-app-pub-3940256099942544/6300978111"
+
+
+
+
+            resValue "string", "admobe_back", "ca-app-pub-3940256099942544/2247696110"
+
+
+
+            resValue "string", "admobe_intertesial_add_custom_reply", "ca-app-pub-3940256099942544/1033173712"
+
+            resValue "string", "admobe_intertesial_auto_reply", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_contact", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_add_custom_reply_message", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_direct_send_message", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_gallery", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_setting", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_whatsweb", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_whatsAppActivity", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_whatsAppCleaner", "ca-app-pub-3940256099942544/1033173712"
+
+            resValue "string", "admobe_intertesial_whatsAppDoc", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_whatsAppVoice", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_whatsAppAudio", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_whatsAppGif", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_whatsAppImages", "ca-app-pub-3940256099942544/1033173712"
+
+            resValue "string", "admobe_intertesial_whatsAppWallaper", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_intertesial_whatsAppVideo", "ca-app-pub-3940256099942544/1033173712"
+
+
+
+            resValue "string", "admobe_interestitial_splash", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "admobe_app_open", "ca-app-pub-3940256099942544/9257395921"
+
+            resValue "string", "admobe_reward", "ca-app-pub-3940256099942544/3419835294"
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+
+
+        }
+    }
+
+    buildFeatures {
+
+        dataBinding true
+        viewBinding true
+        buildConfig true
+
+        // for view binding:
+        // viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    namespace 'com.cd.statussaver'
+
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-process:2.6.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.jsibbold:zoomage:1.2.0'
+    implementation 'org.apache.commons:commons-lang3:3.5'
+    implementation 'commons-io:commons-io:2.5'
+    implementation 'org.jsoup:jsoup:1.13.1'
+   // implementation 'com.facebook.android:audience-network-sdk:5.8.0'
+    
+
+    implementation 'com.futuremind.recyclerfastscroll:fastscroll:0.2.5'
+    implementation 'com.hbb20:ccp:2.4.0'
+//    implementation 'com.hbb20:ccp:X.Y.Z'
+//    implementation 'com.hbb20:android-country-picker:0.0.7'
+////    implementation 'com.hbb20:ccp:0.1.1'
+
+
+
+    implementation "androidx.work:work-runtime:2.8.1"
+    //noinspection RiskyLibrary
+    implementation 'com.google.android.gms:play-services-ads-lite:23.1.0'
+
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+
+    implementation 'com.appbrain:appbrain-sdk:+'
+//    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+//    implementation 'com.google.firebase:firebase-messaging:20.1.4'
+    def lifecycle_version = "2.0.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+
+
+    implementation 'com.airbnb.android:lottie:6.3.0'
+
+}
+

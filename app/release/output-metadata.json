@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.zadeveloper.statusdownloader.whatsappstatussaver.savestatus",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 8,
+      "versionName": "0.8",
+      "outputFile": "Master toolkit_vc_8_vn_0.8_-release.apk"
+    }
+  ],
+  "elementType": "File"
+}
